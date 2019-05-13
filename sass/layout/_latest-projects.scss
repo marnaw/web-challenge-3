@@ -24,7 +24,7 @@
     @include respond(tab-land) {
         &::before {
             content: "";
-            background: url('img/phone.png') no-repeat;
+            background: url('../img/phone.png') no-repeat;
             background-size: cover;
             background-position-x: left;
             position: absolute;
