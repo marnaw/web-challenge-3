@@ -431,7 +431,7 @@ body {
   height: 50rem;
   display: flex;
   margin-top: 8rem;
-  background-image: url("img/bg.jpeg");
+  background-image: url("../img/bg.jpeg");
   background-size: cover;
   background-position: top; }
   @media only screen and (min-width: 112.5em) {
@@ -533,7 +533,7 @@ body {
     left: 0;
     min-height: 40rem;
     flex: 1;
-    background: url("img/bg-relax.jpeg") no-repeat;
+    background: url("../img/bg-relax.jpeg") no-repeat;
     background-size: cover;
     background-position: top;
     z-index: 100;
@@ -583,7 +583,7 @@ body {
   @media only screen and (min-width: 56.25em) {
     .last-projects::before {
       content: "";
-      background: url("img/phone.png") no-repeat;
+      background: url("../img/phone.png") no-repeat;
       background-size: cover;
       background-position-x: left;
       position: absolute;
