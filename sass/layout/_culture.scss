@@ -1,0 +1,10 @@
+.culture {
+    @include flex-center(column, flex-start);
+    @include padding-section();
+    background-color: var(--color-grey-light-3);
+    position: relative;
+    top: 0;
+    left: 0;
+
+
+}

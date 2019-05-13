@@ -1,0 +1,10 @@
+.client {
+    @include flex-center(column, flex-start);
+    @include padding-section();
+
+    &__review {
+        display: flex;
+        @include flex-center(column, center);
+
+    }
+}

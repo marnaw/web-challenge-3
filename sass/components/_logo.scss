@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        height: 2.5rem;
+    }
+
+    &__text {
+        font-weight: 700;
+        color: var(--color-grey-dark-1);
+        margin-left: 0.5rem;
+        font-size: 1.4rem;
+
+    }
+}

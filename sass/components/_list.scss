@@ -1,0 +1,53 @@
+.list {
+    list-style: none;
+    align-self: flex-start;
+
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+
+        color: var(--color-grey-light-2);
+        font-size: 1.4rem;
+
+        @include respond(desktop) {
+            font-size: 1.7rem;
+        }
+
+        &:not(:last-child) {
+
+            margin-bottom: 0.7rem;
+
+            @include respond(desktop) {
+                margin-bottom: 1rem;
+            }
+        }
+
+
+
+    }
+
+    &__item-box {}
+
+
+    &__icon {
+        height: 2.8rem;
+        margin-right: 1rem;
+
+        &--small {
+            height: 2rem;
+            width: 1.8rem;
+        }
+
+        &--medium {
+            height: 5rem;
+
+            @include respond(phone) {
+                height: 7rem;
+            }
+        }
+    }
+
+}

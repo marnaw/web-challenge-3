@@ -1,0 +1,20 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-grey-light-1);
+    text-transform: uppercase;
+    @include padding-section();
+    @include flex-center(row, space-between);
+
+    @include respond(tab-port) {
+        justify-content: space-evenly;
+        position: relative;
+        margin-bottom: -8rem;
+        padding: 4rem 2rem;
+    }
+}

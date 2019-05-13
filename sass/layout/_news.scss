@@ -1,0 +1,75 @@
+.news {
+    @include padding-section();
+    @include flex-center(column, center);
+    background-color: var(--color-black-light-1);
+    align-items: center;
+
+    @include respond(tab-port) {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+
+
+    &__row {
+        @include flex-center(column, flex-start);
+        align-items: flex-start;
+        margin-bottom: 2rem;
+
+        @include respond(tab-port) {
+            &:not(:last-child) {
+                margin-right: 2rem;
+
+                @include respond(desktop) {
+                    margin-right: 10rem;
+                }
+            }
+        }
+
+
+    }
+
+    &__box {
+        @include flex-center(row, center);
+        margin-top: 1rem;
+
+    }
+
+    &__icon {
+        margin-right: 1rem;
+        width: 1.8rem;
+        height: 2.2rem;
+    }
+
+    &__text {
+
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: var(--color-grey-light-1);
+            font-size: 1.2rem;
+
+            @include respond(tab-land) {
+                font-size: 1.4rem;
+            }
+
+            @include respond(desktop) {
+                font-size: 1.6rem;
+
+            }
+        }
+    }
+
+    &__tag {
+        color: var(--color-grey-light-1);
+        font-size: 1.2rem;
+        margin-left: 2.7rem;
+    }
+
+    &__last-add {
+        color: var(--color-grey-light-1);
+        font-size: 1rem;
+        margin-left: 2.7rem;
+    }
+}

@@ -1,0 +1,6 @@
+.contact {
+    @include padding-section();
+    @include flex-center(column, center);
+    background-color: var(--color-green);
+
+}

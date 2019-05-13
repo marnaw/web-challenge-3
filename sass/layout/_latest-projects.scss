@@ -1,0 +1,39 @@
+.last-projects {
+    position: relative;
+    top: 0;
+    left: 0;
+    @include padding-section();
+    overflow: hidden;
+
+    &__wrapper {
+        margin-top: 1.4rem;
+
+        @include respond(tab-land) {
+            padding-left: 10rem;
+        }
+
+        @include respond(desktop) {
+            padding-left: 12rem;
+        }
+
+        @include respond(big-desktop) {
+            padding-left: 15rem;
+        }
+    }
+
+    @include respond(tab-land) {
+        &::before {
+            content: "";
+            background: url('../img/phone.png') no-repeat;
+            background-size: cover;
+            background-position-x: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 0;
+            width: 109rem;
+            height: 62rem;
+            transform: scale(0.6) translate(0%, -70%);
+        }
+    }
+}

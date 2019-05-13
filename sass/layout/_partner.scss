@@ -1,0 +1,17 @@
+.partner {
+    @include flex-center(column, center);
+    @include padding-section();
+
+    @include respond(tab-port) {
+        flex-direction: row;
+    }
+
+    &__logo {
+        margin-top: 3rem;
+
+        @include respond(tab-port) {
+            width: 15rem;
+            margin: 0 2rem 0;
+        }
+    }
+}
